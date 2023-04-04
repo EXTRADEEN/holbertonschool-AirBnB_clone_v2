@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+""" Create a instance """
+
 from flask import Flask
 
 
-""" Create a instance """
 app = Flask(__name__)
 
 
 """ Route for the homepage """
+
+
 @app.route('/', strict_slashes=False)
 def home():
     return 'Hello HBNB!'
