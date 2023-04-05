@@ -47,7 +47,6 @@ def python_txt(text='is cool'):
 """ Route for /number/<n> """
 
 
-@app.route('/number', strict_slashes=False)
 @app.route('/number/<int:n>', strict_slashes=False)
 def disp_num(n):
         """ Return number """
